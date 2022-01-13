@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-compatible" content="ie-edge" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Contact </title>
+</head>
+
+<body>
+    <header>
+        <h1><br>Contact<br><br></h1>
+        <p>Wil je meer weten over houtbewerken en meubels maken? Stel hieronder dan je vragen en neem ik zo snel
+            mogelijk contact op. </p>
+    </header>
+
+    <main class="form-container">
+        <form name="favorite" method="POST" data-netlify="true">
+            <div>
+                <label for="name">Name: </label>
+                <input type="text" size="30" id="name" name="name">
+            </div>
+            <div>
+                <label for="email">Emailadres:</label>
+                <input type="email" size="30" id="email" name="email">
+            </div>
+            <div>
+                <label for="phone">Phone number:</label>
+                <input type="tel" id="phone" name="phone" value="06-" pattern="[0-9]{2}-[0-9]{8}]">
+            </div><br>
+            <div>
+                Jouw favoriete ontwerp:
+                <div>
+                    <input type="checkbox" id="Mondriaan" name="Mondriaan" value="Mondriaan">
+                    <label for="Mondriaan"> Mondriaan</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Steltman" name="Steltman" value="Steltman">
+                    <label for="Steltman"> Steltman</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Kratstoel" name="Kratstoel" value="Kratstoel">
+                    <label for="Kratstoel"> Kratstoel</label>
+                </div>
+                <br>
+            </div>
+            <div>
+                <label for="biography">Stel hier uw vraag:</label><br>
+                <textarea class="formfield" id="biography" name="biography" rows="6" cols="40"> Vraag     
+                </textarea>
+            </div><br>
+            <div>
+                <label for="mychair">Upload hier een foto van jouw favoriete stoel:</label>
+                <input type="file" id="mychair" name="mychair">
+            </div><br>
+            <div>
+                <label for="homepage">Jouw favoriete meubelmerk (website):</label>
+                <input type="url" id="homepage" name="homepage" value="http://"><br><br>
+            </div>
+            <input type="submit" value="Submit">
+            <input type="reset"><br>
+        </form>
+    </main><br>
+
+    <div class="button">
+        <a href="index.html"> Home </a>
+    </div>
+
+
+    <footer>
+        <h5>Winc Academy Hackathon Opdracht</h5>
+    </footer>
+
+</body>
+
+
+
+</html>
